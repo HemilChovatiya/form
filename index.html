@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms And Tags</title>
+</head>
+<body>
+    <form action="demo.php" method="post">
+        <label for="name">Name:</label>
+        <div>
+           <input type="text" name="myname" id="name" required>
+        </div><br>
+<?php
+echo "Hemllls";
+?>
+       
+        <label for="email"> Email:</label>
+        <div>
+            <input type="email" name="myemail" id="email" required>
+        </div><br> 
+         
+        <div>
+            Gender:  
+	    <label for="male"> Male</label><input type="radio" value="m" name="mygender" id="male" required>
+            <label for="female">Female</label> <input type="radio" value="f" name="mygender" id="female" required> 
+            <label for="other">other</label><input type="radio" name="mygender" value="o" id="other" required>
+        </div><br>
+
+         <label for="age">Age:</label>
+        <div>
+            <input type="number" name="myage" id="age" required>
+        </div><br>
+
+        <label for="car">car:</label>
+        <select name="mycar" id="car">
+            <option value="indica" required>Indica</option>
+            <option value="swift" required selected>Swift</option>
+            <option value="bmw" required>bmw</option>
+            <option value="other" required>other</option>
+        </select>
+
+        <br><br>
+
+        <div>
+            <input type="submit" value="Submit Now" >
+            <input type="reset" value="Reset Now">
+        </div><br>
+    </form>
+</body>
+</html>
+
+
